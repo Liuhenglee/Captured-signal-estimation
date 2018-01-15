@@ -1,0 +1,53 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="$(Install_dir)\boards\evmdm6437\lib\evmdm6437bsl\"
+ProjectType=Library
+CPUFamily=TMS320C64XX
+Tool="Archiver"
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="evmdm6437.c"
+Source="evmdm6437_aic33_closecodec.c"
+Source="evmdm6437_aic33_opencodec.c"
+Source="evmdm6437_aic33_read16.c"
+Source="evmdm6437_aic33_read32.c"
+Source="evmdm6437_aic33_registers.c"
+Source="evmdm6437_aic33_write16.c"
+Source="evmdm6437_aic33_write32.c"
+Source="evmdm6437_ddr.c"
+Source="evmdm6437_dip.c"
+Source="evmdm6437_eeprom.c"
+Source="evmdm6437_flash.c"
+Source="evmdm6437_flash_checksum.c"
+Source="evmdm6437_flash_erase.c"
+Source="evmdm6437_flash_id.c"
+Source="evmdm6437_flash_read.c"
+Source="evmdm6437_flash_write.c"
+Source="evmdm6437_gpio.c"
+Source="evmdm6437_i2c.c"
+Source="evmdm6437_i2c_gpio.c"
+Source="evmdm6437_led.c"
+Source="evmdm6437_mcasp.c"
+Source="evmdm6437_nandflash.c"
+Source="evmdm6437_pll.c"
+Source="evmdm6437_psc.c"
+Source="evmdm6437_uart.c"
+
+["Archiver" Settings: "Debug"]
+Options=-r -o".\Debug\evmdm6437bsl.lib"
+
+["Archiver" Settings: "Release"]
+Options=-r -o".\Release\evmdm6437bsl.lib"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr".\Debug" -i"..\..\include\" -d"_DEBUG" -mv6400+
+
+["Compiler" Settings: "Release"]
+Options=-o3 -fr".\Release" -i"..\..\include\" -mv6400+
+

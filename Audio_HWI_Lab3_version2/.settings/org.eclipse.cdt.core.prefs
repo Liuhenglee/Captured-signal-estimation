@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/com.ti.ccstudio.buildDefinitions.C6000.Debug.1946046826/BSL_EVMDM6437_INSTALL_DIR/delimiter=;
+environment/project/com.ti.ccstudio.buildDefinitions.C6000.Debug.1946046826/BSL_EVMDM6437_INSTALL_DIR/operation=append
+environment/project/com.ti.ccstudio.buildDefinitions.C6000.Debug.1946046826/BSL_EVMDM6437_INSTALL_DIR/value=C\:\\ti\\boards\\evmdm6437_v2
+environment/project/com.ti.ccstudio.buildDefinitions.C6000.Debug.1946046826/append=true
+environment/project/com.ti.ccstudio.buildDefinitions.C6000.Debug.1946046826/appendContributed=true

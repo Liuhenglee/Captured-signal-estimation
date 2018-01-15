@@ -1,0 +1,508 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./evmdm6437_releasenotes_files/filelist.xml">
+<title>TMS320DM6437 EVM Release Notes</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Tonyc</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Vss6Admin</o:LastAuthor>
+  <o:Revision>36</o:Revision>
+  <o:TotalTime>71</o:TotalTime>
+  <o:Created>2002-03-29T13:44:00Z</o:Created>
+  <o:LastSaved>2007-02-22T14:24:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>856</o:Words>
+  <o:Characters>4881</o:Characters>
+  <o:Company>Spectrum Digital Incorporated</o:Company>
+  <o:Lines>40</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>5994</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+span.SPELLE
+	{mso-spl-e:yes;}
+span.GRAME
+	{mso-gram-e:yes;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+ /* Page Definitions */
+@page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PostalCode"/><o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="State"/><o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City"/><o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place"/><o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="Street"/><o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="address"/><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">  </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <u1:WordDocument>
+  <u1:DoNotHyphenateCaps/>
+  <u1:PunctuationKerning/>
+  <u1:DrawingGridHorizontalSpacing>6 pt</u1:DrawingGridHorizontalSpacing>
+  <u1:DrawingGridVerticalSpacing>6 pt</u1:DrawingGridVerticalSpacing>
+  <u1:DisplayHorizontalDrawingGridEvery>0</u1:DisplayHorizontalDrawingGridEvery>
+  <u1:DisplayVerticalDrawingGridEvery>3</u1:DisplayVerticalDrawingGridEvery>
+  <u1:UseMarginsForDrawingGridOrigin/>
+  <u1:DoNotShadeFormData/>
+  <u1:Compatibility>
+   <u1:FootnoteLayoutLikeWW8/>
+   <u1:ShapeLayoutLikeWW8/>
+   <u1:AlignTablesRowByRow/>
+   <u1:ForgetLastTabAlignment/>
+   <u1:LayoutRawTableWidth/>
+   <u1:LayoutTableRowsApart/>
+  </u1:Compatibility>
+ </u1:WordDocument>
+</xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in;text-justify-trim:
+punctuation'>
+
+<div class=Section1>
+
+<h1><span style='font-family:Arial'>Release notes for TMS320DM6437 EVM<o:p></o:p></span></h1>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Spectrum Digital Inc <span style='mso-tab-count:6'>                                                               </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><st1:Street w:st="on"><st1:address w:st="on"><b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>12502
+Exchange Dr</st1:address></st1:Street>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><st1:address w:st="on"><st1:Street w:st="on"><b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'>Suite</st1:Street>
+440<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'></st1:address><b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><st1:place w:st="on"><st1:City w:st="on">Stafford</st1:City>,
+<st1:State w:st="on">Texas</st1:State> <st1:PostalCode w:st="on">77477</st1:PostalCode></span></b></st1:place><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><span
+style="mso-spacerun: yes">                                  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Web:</span></b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><span style='mso-tab-count:2'>                </span><a
+href="http://www.spectrumdigital.com/">http://www.spectrumdigital.com/</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Support:<span style='mso-tab-count:1'>           </span></span></b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><a
+href="mailto:support@spectrumdigital.com">mailto:support@spectrumdigital.com</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Phone:</span></b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <span style='mso-tab-count:1'>            </span>281-494-4500<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Fax:</span></b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><span style='mso-tab-count:2'>                 </span>281-494-5310<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Processor Supported</span></b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>TMS320DM6437 on TMS320DM6437 EVM<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Operating Systems Supported:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Windows 2000 with service pack 2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Windows XP<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>USB Connection:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Version 1.10 or 2.0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Code Composer version supported:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Version 3.3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Product Release</span></b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><span style='mso-tab-count:1'>          </span>3.3.16<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Release Date</span></b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><span style='mso-tab-count:2'>               </span>Feb
+2007<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>2.0 Installation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>See Quick Start guide shipped with product for step by step
+install.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>3.0 Some Basics on How it Works<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>When the EVM is powered up the embedded USB controller will
+boot up and wait for enumeration from the host.<span style="mso-spacerun:
+yes">  </span>Once the host has enumerated, Code Composer can be started. When
+a USB device is enumerated it will show up under the Windows Hardware Device
+Manager.<span style="mso-spacerun: yes">  </span>When Code Composer is started
+the emulation driver will make contact with the EVM (see led DS501 flash).<span
+style="mso-spacerun: yes">  </span>It will then download the emulation firmware
+to the EVM.<span style="mso-spacerun: yes">  </span>Once that is complete the
+firmware will disconnect from the USB bus and reconnect as an emulator.<span
+style="mso-spacerun: yes">  </span>When the LED DS501 is on solid the USB
+controller is disconnected from the USB bus. DS501 will normally be on solid
+for ~1 second to meet the USB disconnect reconnect timing.<span
+style="mso-spacerun: yes">  </span>Once connected DS501 will flash during
+emulation activity.<span style="mso-spacerun: yes">  </span>When you exit Code
+Composer the DDB will once again disconnect from the USB bus and reconnect in
+boot mode, ready for the next debug session.<span style="mso-spacerun: yes"> 
+</span>The DM6437 EVM icon is used to load the emulation app then start
+CCS.<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>The USB controller is not affected by the EVM reset
+push-button.<span style="mso-spacerun: yes">  </span>When the EVM is powered on
+the USB controller gets a power on reset.<span style="mso-spacerun: yes"> 
+</span>The USB controller does NOT pull a hardware reset on the DM6437
+processor or hold the DM6437 in reset. This allows the EVM to run standalone.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>To use the external emulator JTAG port, power off the EVM,
+install the JTAG cable and power the EVM. By default the embedded USB
+controller will supply JTAG signals to the DM6437.<span style="mso-spacerun:
+yes">  </span>When the external JTAG cable is plugged, in the JTAG signals are
+switched asynchronously to the external emulator.<span style="mso-spacerun:
+yes">  </span>This can cause glitches on the DM6437 JTAG signals.<span
+style="mso-spacerun: yes">  </span>With the external emulator is plugged in
+when power is off, the EVM will startup in external emulator mode with clean
+JTAG signals<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>You have to be logged on as an administrator to install USB
+devices on Windows 2000/XP.<span style="mso-spacerun: yes">  </span>Under
+Windows each time you move your USB cable to a new port on the same machine
+this is a new install. This can be annoying if you move your USB cable around
+to different ports.<span style="mso-spacerun: yes">  </span>During the install
+process you can cycle through installing the EVM on all your USB ports.<span
+style="mso-spacerun: yes">  </span>This &quot;preps&quot; your machine to run
+the EVM on any of its USB ports.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>4.0 Limitations<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>4.0.1 Single EVM per PC<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>Multiple EVMs on one host are NOT supported.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>4.027 </span></i></b><b><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'>SDSsq19464 Admin privileges needed
+for Code Composer Studio installation<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>Release Note</span></i></b><span style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <br>
+CCS requires access to specific registry entries when installing and using the
+tool. In certain installations of CCS, while in user mode, you are prevented
+from writing to the registry. The following instructions provide details of how
+to install CCS with Administrative privileges and allow write access in the
+registry as a user.&nbsp; <o:p></o:p></span></p>
+
+<p><b><i><span style='font-size:10.0pt;font-family:Arial'>Windows NT</span></i></b><b><i><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <o:p></o:p></span></i></b></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>The Code Composer Studio
+product needs to be installed using an account with Administrator privileges:</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>1. Log in as an
+administrator.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>2. Install the product
+by running &lt;setup.exe&gt;.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>3. If the installation
+process prompts for a reboot, the administrator must log in again prior to
+first use. This will allow the installation process to update registry settings
+after a reboot.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>Once this procedure is
+complete users belonging to the &quot;Users&quot; group may fully utilize the
+Code Composer Studio product.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><b><i><span style='font-size:10.0pt;font-family:Arial'>Windows 2000</span></i></b><b><i><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <o:p></o:p></span></i></b></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>Similar to the procedure on
+Windows NT, the Code Composer Studio product needs to be installed using an
+account with Administrator privileges. If the installation process prompts for
+a reboot the administrator must log in again prior to first use. This will
+allow the installation process to update registry settings after a reboot.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>However, the
+&quot;Users&quot; account under Windows 2000 is, by default, significantly more
+restricted than a &quot;Users&quot; account under Windows NT. One of the new
+restrictions is that the &quot;Users&quot; group has read-only access to all
+parts of the registry. During its normal course of operation, Code Composer
+Studio reads and writes configuration and session information to the registry.
+There are two possible actions that may be taken to allow non-administrator
+users to use Code Composer Studio:</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>1. The administrator may
+modify registry permissions for the areas of registry that are used by Code
+Composer Studio. The procedure to do this is as follows:</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>a) Log in as an
+administrator.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>b) Choose
+&quot;Start-&gt;Run&quot; from the Windows 2000 Start menu.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>c) Type
+&quot;regedt32&quot; (not &quot;regedit&quot;) to bring up the Registry Editor.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>d) From the
+&quot;Window&quot; menu, select &quot;HKEY_LOCAL_MACHINE on the Local
+Machine&quot;.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>e) Expand the
+&quot;SOFTWARE&quot; key.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>f) Locate and select
+the sub-key &quot;GODSP&quot;.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>g) With
+&quot;GODSP&quot; selected, choose &quot;Security Permissions...&quot; from the
+menu.</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:
+Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>h) In the upper half of
+the &quot;Permissions for GODSP&quot; window there will be a list of all the
+users and groups that access the key.</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>i) Select the
+&quot;Users&quot; group.</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>j) In the
+&quot;Permissions:&quot; box, locate the item &quot;Full Control&quot; and check
+the corresponding box under &quot;Allow&quot;.</span><span style='font-size:
+10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'> <br>
+</span><span style='font-size:10.0pt;font-family:Arial'>k) Repeat steps
+&quot;e&quot; through &quot;i&quot; for &quot;HKLM\Software\Texas
+Instruments.&quot;</span><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'> <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>2. The second option is to
+allow users that will be using the Code Composer Studio product access via a
+&quot;Power User&quot; account. &quot;Power User&quot; accounts on Windows 2000
+provide an access level similar to that of a &quot;User&quot; account on WinNT.</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><span style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Arial'><span style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

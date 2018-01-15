@@ -1,0 +1,23 @@
+utils.loadPlatform("ti.platforms.evmDM6437");
+
+/* The following DSP/BIOS Features are enabled.  */
+bios.enableRealTimeAnalysis(prog);
+bios.enableRtdx(prog);
+bios.enableTskManager(prog);
+
+bios.MEM.NOMEMORYHEAPS = 0;
+bios.MEM.instance("IRAM").createHeap = 1;
+bios.MEM.BIOSOBJSEG = prog.get("IRAM");
+bios.MEM.MALLOCSEG = prog.get("IRAM");
+bios.HWI.instance("HWI_INT4").interruptSelectNumber = 51;
+bios.HWI.instance("HWI_INT4").fxn = prog.extern("isrAudio");
+bios.HWI.instance("HWI_INT4").useDispatcher = 1;
+bios.SWI.create("estimate_SWI");
+bios.SWI.instance("estimate_SWI").order = 1;
+bios.SWI.instance("estimate_SWI").fxn = prog.extern("estimate");
+bios.LOG.create("trace");
+bios.LOG.instance("trace").bufLen = 1024;
+// !GRAPHICAL_CONFIG_TOOL_SCRIPT_INSERT_POINT!
+
+prog.gen();
+

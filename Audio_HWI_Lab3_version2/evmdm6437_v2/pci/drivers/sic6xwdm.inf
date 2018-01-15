@@ -1,0 +1,81 @@
+[Version]
+Signature=$CHICAGO$
+Class=SIC6XWDM
+ClassGuid={9A93D7BF-7BB7-4019-BC57-22C1F3013B59}
+Provider=%MFGNAME%
+
+[Manufacturer]
+%MFGNAME%=DeviceList
+
+[DestinationDirs]
+DefaultDestDir=10,System32\Drivers
+
+[SourceDisksFiles]
+sic6xwdm.sys=1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+[DeviceList]
+%DESCRIPTION1%=DriverInstall,PCI\VEN_104C&DEV_b001
+
+;------------------------------------------------------------------------------
+;  Windows 2000 Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall.NT]
+CopyFiles=DriverCopyFiles
+DriverVer=05/20/2003
+; TODO Add a LogConfig command and section if this is a legacy device
+
+[DriverCopyFiles]
+sic6xwdm.sys,,,2
+
+[DriverInstall.NT.Services]
+AddService=SIC6xWDM,2,DriverService
+
+[DriverService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\sic6xwdm.sys
+
+[DriverInstall.nt.hw]
+AddReg=DriverHwAddReg
+
+[DriverHwAddReg]
+HKR,,FriendlyName,,"SIC6XWDM"
+
+[ClassInstall32]
+AddReg=SIC6XWDMClassReg
+
+[SIC6XWDMClassReg]
+HKR,,,0,SIC6XWDM
+HKR,,Icon,,-5
+ 
+;------------------------------------------------------------------------------
+;  Windows 98 Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall]
+AddReg=DriverAddReg
+CopyFiles=DriverCopyFiles
+; TODO Add a LogConfig command and section if this is a legacy device
+
+[DriverAddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,sic6xwdm.sys
+
+[DriverInstall.hw]
+AddReg=DriverHwAddReg
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="Sheldon Instruments"
+INSTDISK="SI-C6xWDM"
+DESCRIPTION0="SI-DDK-TIC642-WDM Driver for PCI Devices."
+DESCRIPTION1="SI-DDK-TIC6437-WDM Driver for PCI Devices."
+
